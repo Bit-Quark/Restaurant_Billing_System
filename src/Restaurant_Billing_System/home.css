@@ -1,0 +1,61 @@
+#Name 
+{
+    -fx-font-size : 47px;
+    -fx-font-family : HP Simplified;
+}
+
+#Monthly_Entry
+{
+-fx-background-color : #05071F;
+-fx-text-fill : #e7e5e5;
+-fx-font-size : 22px;
+}
+
+#Monthly_Entry:hover
+{
+-fx-background-color : #10165F;
+-fx-border-color: #E0F7FA;
+
+}
+
+#Take_Order
+{
+-fx-background-color : #05071F;
+-fx-text-fill : #e7e5e5;
+-fx-font-size : 22px;
+}
+
+#Take_Order:hover
+{
+-fx-background-color : #10165F;
+-fx-border-color: #E0F7FA;
+
+}
+
+#Order_List
+{
+-fx-background-color : #05071F;
+-fx-text-fill : #e7e5e5;
+-fx-font-size : 22px;
+}
+
+#Order_List:hover
+{
+-fx-background-color : #10165F;
+-fx-border-color: #E0F7FA;
+
+}
+
+#exit_button
+{
+-fx-background-color : #05071F;
+-fx-text-fill : #e7e5e5;
+-fx-font-size : 22px;
+}
+
+#exit_button:hover
+{
+-fx-background-color : #10165F;
+-fx-border-color: #E0F7FA;
+
+}
