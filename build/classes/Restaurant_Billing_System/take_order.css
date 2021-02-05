@@ -1,0 +1,43 @@
+#homebutton{
+    -fx-font-size : 22px;
+    -fx-font-family : HP Simplified;
+
+}
+
+#monthlyentry
+{
+    -fx-font-size : 22px;
+    -fx-font-family : HP Simplified;
+}
+
+#orderlist{
+    -fx-font-size : 22px;
+    -fx-font-family : HP Simplified;
+
+}
+
+#exit{
+    -fx-font-size : 22px;
+    -fx-font-family : HP Simplified;
+
+}
+
+#name{
+    -fx-font-size: 27px;
+}
+
+#delete
+{
+    -fx-font-size: 12px;
+    
+}
+#modify
+{
+    -fx-font-size: 12px;
+}
+
+/*
+.button{
+    -fx-font-size : 12px;
+}
+*/

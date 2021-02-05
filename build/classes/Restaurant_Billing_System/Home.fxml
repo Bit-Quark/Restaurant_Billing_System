@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="background" prefHeight="576.0" prefWidth="1055.0" style="-fx-background-color: #fffaf0;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Restaurant_Billing_System.HomeController">
+    <stylesheets>
+        <URL value="@home.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="color_back_half" layoutY="299.0" prefHeight="287.0" prefWidth="1056.0" style="-fx-background-color: #05071F;" stylesheets="@home.css">
+         <children>
+            <Button fx:id="Monthly_Entry" layoutX="83.0" layoutY="76.0" mnemonicParsing="false" onAction="#click_monthly_entry" prefHeight="172.0" prefWidth="179.0" style="-fx-background-color: #05071F;" stylesheets="@home.css" text="Monthly Entry" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="monthly_entry_image" fitHeight="42.0" fitWidth="70.0" layoutX="152.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_Xbox_Menu_32px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Take_Order" layoutX="352.0" layoutY="76.0" mnemonicParsing="false" onAction="#click_take_order" prefHeight="172.0" prefWidth="179.0" style="-fx-background-color: #05071F;" stylesheets="@home.css" text="Take Order" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="Order_List" layoutX="606.0" layoutY="76.0" mnemonicParsing="false" onAction="#click_order_list" prefHeight="172.0" prefWidth="179.0" style="-fx-background-color: #05071F;" stylesheets="@home.css" text="Order List" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="take_order_image" fitHeight="42.0" fitWidth="70.0" layoutX="421.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_Box_32px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="order_image" fitHeight="42.0" fitWidth="70.0" layoutX="675.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_Slider__32px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="exit_button" layoutX="843.0" layoutY="76.0" mnemonicParsing="false" onAction="#click_exit" prefHeight="172.0" prefWidth="179.0" style="-fx-background-color: #05071F;" stylesheets="@home.css" text="Exit" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="exit_image" fitHeight="42.0" fitWidth="70.0" layoutX="912.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_Sign_Out_32px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="Name" alignment="CENTER" layoutX="367.0" layoutY="116.0" prefHeight="17.0" prefWidth="322.0" text="G I V E   I N">
+         <font>
+            <Font name="HP Simplified" size="47.0" />
+         </font>
+      </Label>
+      <Label fx:id="rest_name" alignment="CENTER" layoutX="463.0" layoutY="177.0" prefHeight="17.0" prefWidth="130.0" text="R E S T A U R A N T" />
+   </children>
+</AnchorPane>

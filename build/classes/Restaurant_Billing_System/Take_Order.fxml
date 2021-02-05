@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1055.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Restaurant_Billing_System.Take_OrderController">
+   <children>
+      <ListView fx:id="listview" layoutX="222.0" onMouseClicked="#onMouseClicked" prefHeight="513.0" prefWidth="286.0" />
+      <Text layoutX="556.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="49.0" />
+      <TextField fx:id="Total" layoutX="614.0" layoutY="489.0" />
+      <VBox fx:id="dashboard" alignment="CENTER" prefHeight="584.0" prefWidth="197.0" style="-fx-background-color: #05071F;">
+         <children>
+            <Label fx:id="name" lineSpacing="10.0" text="G I V E  I N" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="name2" text="R E S T A U R A N T" textAlignment="CENTER" textFill="#f8f8f8">
+               <padding>
+                  <Insets bottom="50.0" />
+               </padding>
+            </Label>
+            <Button fx:id="homebutton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#click_homebutton" prefHeight="71.0" prefWidth="230.0" style="-fx-background-color: #05071F;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="monthlyentry" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#click_monthlyentry" prefHeight="71.0" prefWidth="185.0" style="-fx-background-color: #05071F;" text="Monthly Entry" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="orderlist" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#click_orderlist" prefHeight="71.0" prefWidth="230.0" style="-fx-background-color: #05071F;" text="Order List" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" alignment="CENTER" mnemonicParsing="false" onAction="#click_exit" prefHeight="73.0" prefWidth="230.0" style="-fx-background-color: #05071F;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="delete" layoutX="340.0" layoutY="531.0" mnemonicParsing="false" onAction="#click_delete" text="Delete" />
+      <Button fx:id="bill" layoutX="854.0" layoutY="489.0" mnemonicParsing="false" onAction="#click_bill" text="Generate Bill" />
+      <AnchorPane layoutX="535.0" layoutY="43.0" prefHeight="200.0" prefWidth="195.0">
+         <children>
+            <Button fx:id="chickenBBQ" layoutY="34.0" mnemonicParsing="false" onAction="#chickenBBQOnAction" prefHeight="25.0" prefWidth="96.0" text="Chicken BBQ" />
+            <Label layoutX="38.0" layoutY="1.0" prefHeight="26.0" prefWidth="119.0" text="Chicken Burger">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="Binge" layoutY="66.0" mnemonicParsing="false" onAction="#BingeOnAction" prefHeight="25.0" prefWidth="96.0" text="Chicken Binge" />
+            <Button fx:id="Giganto" layoutY="100.0" mnemonicParsing="false" onAction="#GigantoOnAction" prefHeight="25.0" prefWidth="96.0" text="Giganto" />
+            <Button fx:id="Naga" layoutY="132.0" mnemonicParsing="false" onAction="#NagaOnAction" prefHeight="25.0" prefWidth="96.0" text="Naga Burst" />
+            <Button fx:id="Smoky" layoutY="167.0" mnemonicParsing="false" onAction="#SmokyOnAction" prefHeight="25.0" prefWidth="96.0" text="Smoky BBQ" />
+            <Label layoutX="138.0" layoutY="38.0" text="180" />
+            <Label layoutX="138.0" layoutY="70.0" text="200" />
+            <Label layoutX="138.0" layoutY="104.0" text="300" />
+            <Label layoutX="138.0" layoutY="136.0" text="280" />
+            <Label layoutX="138.0" layoutY="171.0" text="200" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="783.0" layoutY="43.0" prefHeight="200.0" prefWidth="225.0">
+         <children>
+            <Label layoutX="59.0" layoutY="1.0" text="Beef Burger">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="BeefBurger" layoutY="36.0" mnemonicParsing="false" onAction="#BeefBurgerOnAction" prefHeight="25.0" prefWidth="96.0" text="Beef Burger" />
+            <Button fx:id="BeefSignature" layoutY="67.0" mnemonicParsing="false" onAction="#SignatureOnAction" prefHeight="25.0" prefWidth="96.0" text="Beef Signature" />
+            <Button fx:id="BingeBeef" layoutY="100.0" mnemonicParsing="false" onAction="#BingeBeefOnAction" prefHeight="25.0" prefWidth="96.0" text="Binge Beef" />
+            <Button fx:id="GigantoBeef" layoutY="136.0" mnemonicParsing="false" onAction="#GigantoBeefOnAction" prefHeight="25.0" prefWidth="96.0" text="Giganto Beef" />
+            <Label layoutX="147.0" layoutY="40.0" text="180" />
+            <Label layoutX="147.0" layoutY="71.0" text="310" />
+            <Label layoutX="147.0" layoutY="104.0" text="260" />
+            <Label layoutX="147.0" layoutY="140.0" text="400" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="535.0" layoutY="257.0" prefHeight="200.0" prefWidth="195.0">
+         <children>
+            <Label layoutX="72.0" layoutY="6.0" text="Shakes">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="choco" layoutX="-4.0" layoutY="48.0" mnemonicParsing="false" onAction="#chocoOnAction" prefHeight="25.0" prefWidth="96.0" text="Chocolacious" />
+            <Button fx:id="kitkat" layoutX="-4.0" layoutY="84.0" mnemonicParsing="false" onAction="#kitkatOnAction" prefHeight="25.0" prefWidth="96.0" text="Kitkatlacous" />
+            <Button fx:id="oreo" layoutX="-4.0" layoutY="119.0" mnemonicParsing="false" onAction="#OreoOnAction" prefHeight="25.0" prefWidth="96.0" text="Oreolacious" />
+            <Button fx:id="Hot" layoutX="-4.0" layoutY="153.0" mnemonicParsing="false" onAction="#HotOnAction" prefHeight="25.0" prefWidth="96.0" text="Hot Chocolates" />
+            <Label layoutX="129.0" layoutY="52.0" text="180" />
+            <Label layoutX="129.0" layoutY="88.0" text="200" />
+            <Label layoutX="129.0" layoutY="123.0" text="220" />
+            <Label layoutX="129.0" layoutY="157.0" text="240" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="778.0" layoutY="266.0" prefHeight="183.0" prefWidth="235.0">
+         <children>
+            <Label layoutX="93.0" layoutY="1.0" text="Coffee">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="Americana" layoutY="40.0" mnemonicParsing="false" onAction="#americanaOnAction" prefHeight="25.0" prefWidth="88.0" text="Americano" />
+            <Button fx:id="Latte" layoutY="76.0" mnemonicParsing="false" onAction="#LatteOnAction" prefHeight="25.0" prefWidth="88.0" text="Latte" />
+            <Button fx:id="Cappucino" layoutY="113.0" mnemonicParsing="false" onAction="#cappucinoOnAction" prefHeight="25.0" prefWidth="88.0" text="Cappucino" />
+            <Button fx:id="green" layoutY="150.0" mnemonicParsing="false" onAction="#greenOnAction" prefHeight="25.0" prefWidth="88.0" text="Green Tea" />
+            <Label layoutX="157.0" layoutY="44.0" text="140" />
+            <Label layoutX="157.0" layoutY="80.0" text="200" />
+            <Label layoutX="157.0" layoutY="117.0" text="160" />
+            <Label layoutX="161.0" layoutY="154.0" text="90" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

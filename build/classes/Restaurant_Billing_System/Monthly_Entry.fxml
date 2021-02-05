@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="background" prefHeight="576.0" prefWidth="1055.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Restaurant_Billing_System.Monthly_EntryController">
+    <stylesheets>
+        <URL value="@monthly_entry.css" />
+    </stylesheets>
+   <children>
+      <VBox fx:id="dashboard" alignment="CENTER" prefHeight="584.0" prefWidth="197.0" style="-fx-background-color: #05071F;">
+         <children>
+            <Label fx:id="name" lineSpacing="10.0" text="G I V E  I N" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="name2" text="R E S T A U R A N T" textAlignment="CENTER" textFill="#f8f8f8">
+               <padding>
+                  <Insets bottom="50.0" />
+               </padding>
+            </Label>
+            <Button fx:id="homebutton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#click_homebutton" prefHeight="71.0" prefWidth="230.0" style="-fx-background-color: #05071F;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="take_order" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#click_takeorder" prefHeight="71.0" prefWidth="185.0" style="-fx-background-color: #05071F;" text="Take Order" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="orderlist" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#click_orderlist" prefHeight="71.0" prefWidth="230.0" style="-fx-background-color: #05071F;" text="Order List" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" alignment="CENTER" mnemonicParsing="false" onAction="#click_exit" prefHeight="73.0" prefWidth="230.0" style="-fx-background-color: #05071F;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Text layoutX="429.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" wrappingWidth="52.0" />
+      <Text layoutX="429.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks" />
+      <TextField fx:id="amount" layoutX="570.0" layoutY="156.0" />
+      <TextField fx:id="remarks" layoutX="570.0" layoutY="244.0" />
+      <Button fx:id="proceed" layoutX="518.0" layoutY="367.0" mnemonicParsing="false" onAction="#click_proceed" text="Proceed " />
+   </children>
+</AnchorPane>
